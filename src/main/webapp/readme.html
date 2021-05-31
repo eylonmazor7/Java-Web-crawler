@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>README</title>
+    <h1>Eylon Mazor - ex3 - Web programing B</h1>
+    <p>
+        Name: Eylon Mazor </br>
+        Email: eylonmazor7@gmail.com </br>
+        I.D: 205438369 </br>
+    </p>
+
+    <a href = "api/com/example/ex3_eylon_mazor/package-summary.html"> JavaDoc link </a><br>
+
+    <p>
+        <b>If the project failed on start, please add the library in Project structure -> artifacts from the
+            available elements to the project elements in both WAV.</b><br>
+
+        In this exercise we have asked to build a Web Crawling process.
+        The user need to insert a valid URL - and the crawler crawling this url and all his links (can change the depth
+        of the crawling in web.xml).
+
+    <ul style="line-height: 1.5">
+        <li>
+            My Java classes:
+            <ol>
+                <li><b>Class FullDataBase</b>- Responsible for memory management. hold a synchronize map that save all the
+                    data of all the users</li>
+                <li><b>Class RequestDataBase</b>- Responsible for memory management of each user crawling request.
+                    crate a main thread that start to crawling each link in given url.</li>
+                <li><b>Class MyThread</b>- Responsible for check the url that given and create another threads that
+                    continue to crawling the inside urls.</li>
+            </ol>
+        </li><br>
+        <li>
+            My Java Servlets Listeners:
+            <ol>
+                <li><b>AppContextListener</b>- initiate the DB before anything.</li>
+            </ol>
+        </li><br>
+        <li>
+            My java Servlets:
+            <ol>
+                <li><b>Servlet - MainServlet</b>- Welcome Servlets - send the user to firstPage.html</li>
+                <li><b>Servlet - StartCrawl </b>- Responsible for stating the crawling process after validation of
+                    the given url. save the user ID in his session</li>
+                <li><b>Servlet - Result </b>- Responsible for showing the most update result for each user.</li>
+            </ol>
+        </li><br>
+    </ul>
+    </p>
+
+</head>
+<body>
+
+</body>
+</html>
